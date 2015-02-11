@@ -40,7 +40,7 @@ public class Player {
             while (dayCount < 22 && playerStamina > 20) {
                 switch (dayCount) {                             // this switch is for night events
                     case 1:
-                        events.getEventSeeJanitorNumber(this, this.inventory);
+                        events.getEventFirstNight(this);
                         break;
                 }
                 say("\t \t \t \t \t \t \t \t \t \t [DAY : " + dayCount + "]");
